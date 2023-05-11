@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25E5F622B03137F9BBC4DC74 /* Pods_Tetris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609211D308CECC468C73F51D /* Pods_Tetris.framework */; };
+		FF08E73C29E182FA00F6AFF1 /* CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF08E73A29E182FA00F6AFF1 /* CVC.swift */; };
+		FF08E73D29E182FA00F6AFF1 /* CVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF08E73B29E182FA00F6AFF1 /* CVC.xib */; };
+		FF1A5F2D29D7FCC500C5A84A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A5F2C29D7FCC500C5A84A /* AppDelegate.swift */; };
+		FF1A5F3629D7FCC700C5A84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1A5F3529D7FCC700C5A84A /* Assets.xcassets */; };
+		FF1A5F3929D7FCC700C5A84A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1A5F3729D7FCC700C5A84A /* LaunchScreen.storyboard */; };
+		FF39EBC229E91B83001BDA97 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39EBC029E91B83001BDA97 /* Test.swift */; };
+		FF39EBC329E91B83001BDA97 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF39EBC129E91B83001BDA97 /* Test.xib */; };
+		FF41EA4629E9207D00E9E7A2 /* BrickModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41EA4529E9207D00E9E7A2 /* BrickModel.swift */; };
+		FF41EA4829EFF68100E9E7A2 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41EA4729EFF68100E9E7A2 /* BoardModel.swift */; };
+		FF51F5132A040C780030DAEA /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51F5112A040C780030DAEA /* GameVC.swift */; };
+		FF51F5142A040C780030DAEA /* GameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF51F5122A040C780030DAEA /* GameVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		609211D308CECC468C73F51D /* Pods_Tetris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tetris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FCFCC86EB5B3194D13017ED /* Pods-Tetris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetris.debug.xcconfig"; path = "Target Support Files/Pods-Tetris/Pods-Tetris.debug.xcconfig"; sourceTree = "<group>"; };
+		A5356B0307901CA1A3B5D05D /* Pods-Tetris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetris.release.xcconfig"; path = "Target Support Files/Pods-Tetris/Pods-Tetris.release.xcconfig"; sourceTree = "<group>"; };
+		FF08E73A29E182FA00F6AFF1 /* CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVC.swift; sourceTree = "<group>"; };
+		FF08E73B29E182FA00F6AFF1 /* CVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVC.xib; sourceTree = "<group>"; };
+		FF1A5F2929D7FCC500C5A84A /* Tetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1A5F2C29D7FCC500C5A84A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF1A5F3529D7FCC700C5A84A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF1A5F3829D7FCC700C5A84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF1A5F3A29D7FCC700C5A84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF39EBC029E91B83001BDA97 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		FF39EBC129E91B83001BDA97 /* Test.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
+		FF41EA4529E9207D00E9E7A2 /* BrickModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickModel.swift; sourceTree = "<group>"; };
+		FF41EA4729EFF68100E9E7A2 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
+		FF51F5112A040C780030DAEA /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		FF51F5122A040C780030DAEA /* GameVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1A5F2629D7FCC500C5A84A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E5F622B03137F9BBC4DC74 /* Pods_Tetris.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F44D87441BE2BD4BEFCA10E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				609211D308CECC468C73F51D /* Pods_Tetris.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA36994FF5465A3CAF1868FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FCFCC86EB5B3194D13017ED /* Pods-Tetris.debug.xcconfig */,
+				A5356B0307901CA1A3B5D05D /* Pods-Tetris.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF1A5F2029D7FCC500C5A84A = {
+			isa = PBXGroup;
+			children = (
+				FF1A5F2B29D7FCC500C5A84A /* Tetris */,
+				FF1A5F2A29D7FCC500C5A84A /* Products */,
+				AA36994FF5465A3CAF1868FE /* Pods */,
+				5F44D87441BE2BD4BEFCA10E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1A5F2A29D7FCC500C5A84A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A5F2929D7FCC500C5A84A /* Tetris.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1A5F2B29D7FCC500C5A84A /* Tetris */ = {
+			isa = PBXGroup;
+			children = (
+				FF51F4DF29FEF69D0030DAEA /* Model */,
+				FF51F4DE29FEF6940030DAEA /* View */,
+				FF51F4DD29FEF6870030DAEA /* Cotroller */,
+				FF1A5F2C29D7FCC500C5A84A /* AppDelegate.swift */,
+				FF51F5112A040C780030DAEA /* GameVC.swift */,
+				FF51F5122A040C780030DAEA /* GameVC.xib */,
+				FF1A5F3529D7FCC700C5A84A /* Assets.xcassets */,
+				FF1A5F3729D7FCC700C5A84A /* LaunchScreen.storyboard */,
+				FF1A5F3A29D7FCC700C5A84A /* Info.plist */,
+			);
+			path = Tetris;
+			sourceTree = "<group>";
+		};
+		FF51F4DD29FEF6870030DAEA /* Cotroller */ = {
+			isa = PBXGroup;
+			children = (
+				FF39EBC029E91B83001BDA97 /* Test.swift */,
+				FF08E73A29E182FA00F6AFF1 /* CVC.swift */,
+			);
+			path = Cotroller;
+			sourceTree = "<group>";
+		};
+		FF51F4DE29FEF6940030DAEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF08E73B29E182FA00F6AFF1 /* CVC.xib */,
+				FF39EBC129E91B83001BDA97 /* Test.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF51F4DF29FEF69D0030DAEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF41EA4729EFF68100E9E7A2 /* BoardModel.swift */,
+				FF41EA4529E9207D00E9E7A2 /* BrickModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1A5F2829D7FCC500C5A84A /* Tetris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1A5F3D29D7FCC700C5A84A /* Build configuration list for PBXNativeTarget "Tetris" */;
+			buildPhases = (
+				BE08927DBCA9AF05F0EBDAD0 /* [CP] Check Pods Manifest.lock */,
+				FF1A5F2529D7FCC500C5A84A /* Sources */,
+				FF1A5F2629D7FCC500C5A84A /* Frameworks */,
+				FF1A5F2729D7FCC500C5A84A /* Resources */,
+				7CC993588955B450813655D3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tetris;
+			productName = Tetris;
+			productReference = FF1A5F2929D7FCC500C5A84A /* Tetris.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1A5F2129D7FCC500C5A84A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FF1A5F2829D7FCC500C5A84A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = FF1A5F2429D7FCC500C5A84A /* Build configuration list for PBXProject "Tetris" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1A5F2029D7FCC500C5A84A;
+			productRefGroup = FF1A5F2A29D7FCC500C5A84A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1A5F2829D7FCC500C5A84A /* Tetris */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1A5F2729D7FCC500C5A84A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF39EBC329E91B83001BDA97 /* Test.xib in Resources */,
+				FF51F5142A040C780030DAEA /* GameVC.xib in Resources */,
+				FF08E73D29E182FA00F6AFF1 /* CVC.xib in Resources */,
+				FF1A5F3929D7FCC700C5A84A /* LaunchScreen.storyboard in Resources */,
+				FF1A5F3629D7FCC700C5A84A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CC993588955B450813655D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tetris/Pods-Tetris-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tetris/Pods-Tetris-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tetris/Pods-Tetris-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE08927DBCA9AF05F0EBDAD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tetris-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1A5F2529D7FCC500C5A84A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF08E73C29E182FA00F6AFF1 /* CVC.swift in Sources */,
+				FF41EA4829EFF68100E9E7A2 /* BoardModel.swift in Sources */,
+				FF41EA4629E9207D00E9E7A2 /* BrickModel.swift in Sources */,
+				FF1A5F2D29D7FCC500C5A84A /* AppDelegate.swift in Sources */,
+				FF51F5132A040C780030DAEA /* GameVC.swift in Sources */,
+				FF39EBC229E91B83001BDA97 /* Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF1A5F3729D7FCC700C5A84A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1A5F3829D7FCC700C5A84A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF1A5F3B29D7FCC700C5A84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF1A5F3C29D7FCC700C5A84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1A5F3E29D7FCC700C5A84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FCFCC86EB5B3194D13017ED /* Pods-Tetris.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89RN94CCMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tetris/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sarvar.Tetris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF1A5F3F29D7FCC700C5A84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5356B0307901CA1A3B5D05D /* Pods-Tetris.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89RN94CCMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tetris/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sarvar.Tetris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1A5F2429D7FCC500C5A84A /* Build configuration list for PBXProject "Tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1A5F3B29D7FCC700C5A84A /* Debug */,
+				FF1A5F3C29D7FCC700C5A84A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1A5F3D29D7FCC700C5A84A /* Build configuration list for PBXNativeTarget "Tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1A5F3E29D7FCC700C5A84A /* Debug */,
+				FF1A5F3F29D7FCC700C5A84A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF1A5F2129D7FCC500C5A84A /* Project object */;
+}
